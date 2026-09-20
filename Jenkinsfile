@@ -8,4 +8,19 @@ pipeline {
             }
         }
     }
+        stages {
+        stage('Heart') {
+            steps {
+                echo 'Broken'
+            }
+        }
+    }
+
+        stages {
+        stage('Failing') {
+            steps {
+                echo 'Push Me'
+            }
+        }
+    }
 }
